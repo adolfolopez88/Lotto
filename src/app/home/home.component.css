@@ -1,0 +1,18 @@
+
+.h1-prize {
+  z-index: 100;
+  position: absolute;
+  background: rgba(73, 208, 121, 0.65);
+  padding: 10px;
+  border-radius: 10px;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+}
+
+.lucky-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+}
