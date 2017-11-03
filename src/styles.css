@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.parallax-container .parallax  {
+  z-index: 0 !important;
+}
+
+.countdown .two-dots {
+  display: none;
+}
+
+countdown .measurements {
+  margin-right: 5px;
+  padding: 10px;
+}
+
+countdown .measurements p {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.countdown .divider {
+  font-size: 30px;
+}

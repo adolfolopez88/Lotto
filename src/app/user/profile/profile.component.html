@@ -1,0 +1,47 @@
+<div class="container">
+
+    <mz-parallax [height]="240" class="base-parallax">
+        <img src="../../../assets/images/geometric-sun.jpg" />
+
+        <div class="row">
+
+            <div class="col div-avatar l4 xl4">
+                <img src="../../../assets/images/avatar.png" />
+            </div>
+
+            <div class="col div-profile-detail l8 xl8">
+                <h3>Some name</h3>
+                <p><strong>Phone Number:</strong> 0405116259 </p>
+                <p><strong>Nacionality:</strong> Chilean</p>
+                <p><strong>Visa:</strong> some visa </p>
+            </div>
+        </div>
+    </mz-parallax>
+
+    <div style="min-height:500px; background: #d0cdcd;">
+
+
+    <div class="row">
+        <ul class="tabs indigo darken-3 z-depth-5">
+            <li class="tab col s3"><a class="active"><strong>History</strong></a></li>
+            <li class="tab col s3"><a href="#test2"><strong>Profile</strong></a></li>
+            <li class="tab col s3"><a href="#test3"><strong>Statistics</strong></a></li>
+        </ul>
+    </div>
+
+    <div class="row div-tab-content">
+        <div id="profile-form" class="col s12">
+          <!--<app-profile-form [user]="user"></app-profile-form>-->
+        </div>
+        <div id="test2" class="col s12">Test 2</div>
+        <div id="test3" class="col s12">
+          <br><br>
+          <app-chart-bar></app-chart-bar>
+
+        </div>
+    </div>
+
+</div>
+
+
+

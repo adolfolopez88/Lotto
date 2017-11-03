@@ -13,6 +13,7 @@ import { UserModule } from './user/user.module';
 import { GameModule } from './game/game.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { CountDown } from 'ng2-date-countdown';
 
 const routes: Routes =  [
   { path: '', component: HomeComponent  },
@@ -26,7 +27,8 @@ export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CountDown
   ],
   imports: [
     BrowserAnimationsModule,
