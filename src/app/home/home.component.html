@@ -1,11 +1,12 @@
 <div class="container">
 
-  <mz-parallax [height]="400">
+  <mz-parallax [height]="350">
     <img src="../../assets/images/banner.jpg">
 
     <h1 class="h1-prize">Grand Prize $500000000</h1>
 
-    <button mz-button class="lucky-button"> Generate lucky numbers</button>
+    <countdown  [text]="text" units="Days | Hours | Minutes | Seconds"  end="July 22, 2019"></countdown>
+    <button mz-button class="lucky-button btn btn-floating pulse red"> Generate lucky numbers</button>
   </mz-parallax>
 
 

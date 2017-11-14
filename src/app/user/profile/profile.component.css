@@ -1,0 +1,30 @@
+
+.div-avatar{
+    position: relative;
+    padding: 8px;
+}
+
+.div-profile-detail{
+    color: #d0cdcd;
+    position: relative;
+    font-size: 18px;
+}
+
+.div-avatar img{
+    display: block;
+    position: relative;
+    max-height: 45px !important;
+    max-width: 45px !important;
+    min-height: 220px;
+    min-width: 210px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+ul.tabs li a {
+    color: white;
+}
+
+.div-tab-content {
+    margin-bottom: 0px;
+}

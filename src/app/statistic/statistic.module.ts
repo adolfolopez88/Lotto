@@ -19,6 +19,9 @@ export const routing: ModuleWithProviders = RouterModule.forChild(routes);
     routing,
     ChartsModule
   ],
+  exports : [
+    ChartBarComponent
+  ],
   declarations: [GlobalComponent, ChartDoughnutComponent, ChartBarComponent, ChartRadarComponent]
 })
 export class StatisticModule { }
