@@ -1,160 +1,142 @@
 <div class="container">
-
   <div class="row">
-
     <div class="col m6 l6">
-      <h3>Numbers Filter</h3>
-
-      <mz-checkbox-container>
-
-        <input mz-checkbox
-        [label]="'Odds flag'"
-        value={{generatedSet.oddsFlag}}
-        id="odds-flag"
-        type="checkbox">
-      </mz-checkbox-container>
-
+      <h3>Input Filter</h3>
       <mz-input-container>
           <input mz-input
-          [label]="'Odds numbers'"
+          [label]="'Number of Odds'"
           [validate]="true"
           [dataError]=""
           [dataSuccess]=""
           value={{generatedSet.oddsNumbers}}
           id="odds-numbers"
-          length="150"
-          type="text">
+          max="9"
+          min="0"
+          type="number">
       </mz-input-container>
-
       <mz-input-container>
-          <input mz-input
-          [label]="'Timing'"
-          [validate]="true"
-          [dataError]=""
-          [dataSuccess]=""
-          value={{generatedSet.timing}}
-          id="timing"
-          length="150"
-          type="text">
-      </mz-input-container>
-
-      <mz-checkbox-container>
-          <input mz-checkbox
-          [label]="'B20 flag'"
-          value="{{generatedSet.b20Flag}}"
-          id="flag-for-b20"
-          type="checkbox">
-      </mz-checkbox-container>
-
-      <mz-input-container>
-          <input mz-input
-          [label]="'B20 numbers'"
-          [validate]="true"
-          [dataError]=""
-          [dataSuccess]=""
-          value="{{generatedSet.b20Numbers}}"
-          id="nb-of-b20"
-          length="150"
-          type="text">
-      </mz-input-container>
-
-      <mz-checkbox-container>
-          <input mz-checkbox
-          [label]="'Flag for score'"
-          id="flag-for-score"
-          type="checkbox">
-      </mz-checkbox-container>
-
-      <mz-input-container>
-          <input mz-input
-          [label]="'Score range top'"
-          [validate]="true"
-          [dataError]=""
-          [dataSuccess]=""
-          id="score-range-top"
-          length="150"
-          type="text">
-      </mz-input-container>
-
-      <mz-input-container>
-          <input mz-input
-          [label]="'Score range bottom'"
-          [validate]="true"
-          [dataError]=""
-          [dataSuccess]=""
-          id="score-range-bottom"
-          length="150"
-          type="text">
-      </mz-input-container>
-
-      <mz-input-container>
-          <input mz-input
-          [label]="'Set score'"
-          [validate]="true"
-          [dataError]=""
-          [dataSuccess]=""
-          id="set-score"
-          length="150"
-          type="text">
-      </mz-input-container>
-
-      <mz-checkbox-container>
-          <input mz-checkbox
-          [label]="'Flag for score'"
-          id="flag-for-score"
-          type="checkbox">
-      </mz-checkbox-container>
-
-      <mz-input-container>
-          <input mz-input
-          [label]="'Score range top'"
-          [validate]="true"
-          [dataError]=""
-          [dataSuccess]=""
-          id="score-range-top"
-          length="150"
-          type="text">
-      </mz-input-container>
-
-      <mz-checkbox-container>
-          <input mz-checkbox
-          [label]="'Flag for prev rep'"
-          id="flag-for-prev-rep"
-          type="checkbox">
-      </mz-checkbox-container>
-
-      <mz-input-container>
-          <input mz-input
-          [label]="'Prev rep nb'"
-          [validate]="true"
-          [dataError]=""
-          [dataSuccess]=""
-          id="prev-rep-nb"
-          length="150"
-          type="text">
-      </mz-input-container>
-
-      <mz-input-container>
-          <input mz-input
-          [label]="'Number to Inc'"
-          [validate]="true"
-          [dataError]=""
-          [dataSuccess]=""
-          id="prev-rep-nb"
-          length="150"
-          type="text">
-      </mz-input-container>
-
-      <mz-checkbox-container>
-        <input mz-checkbox
-        [label]="'Failed flag'"
-        id="failed-flag"
-        type="checkbox">
-      </mz-checkbox-container>
+        <input mz-input
+        [label]="'Numbers below 15'"
+        [validate]="true"
+        [dataError]=""
+        [dataSuccess]=""
+        value={{generatedSet.oddsNumbers}}
+        id="below-fifteen-numbers"
+        max="9"
+        min="0"
+        type="number">
+    </mz-input-container>
+    <mz-input-container>
+        <input mz-input
+        [label]="'Numbers between 15 and 30'"
+        [validate]="true"
+        [dataError]=""
+        [dataSuccess]=""
+        value={{generatedSet.oddsNumbers}}
+        id="between-fifteen-thirty"
+        max="9"
+        min="0"
+        type="number">
+    </mz-input-container>
+    <mz-input-container>
+        <input mz-input
+        [label]="'Numbers above 30'"
+        [validate]="true"
+        [dataError]=""
+        [dataSuccess]=""
+        value={{generatedSet.oddsNumbers}}
+        id="above-thirty"
+        max="9"
+        min="0"
+        type="number">
+    </mz-input-container>
+    <mz-input-container>
+        <input mz-input
+        [label]="'Score range'"
+        [validate]="true"
+        [dataError]=""
+        [dataSuccess]=""
+        value={{generatedSet.oddsNumbers}}
+        id="score-range"
+        min="0"
+        max="50"
+        type="range"
+        multiple>
+    </mz-input-container>
+    
+    <mz-input-container>
+        <input mz-input
+        [label]="'Number of previous repeat'"
+        [validate]="true"
+        [dataError]=""
+        [dataSuccess]=""
+        value={{generatedSet.oddsNumbers}}
+        id="previous-repeat"
+        max="9"
+        min="0"
+        type="number">
+    </mz-input-container>
+    <mz-input-container>
+        <input mz-input
+        [label]="'Numbers to include'"
+        [validate]="true"
+        [dataError]=""
+        [dataSuccess]=""
+        value={{generatedSet.oddsNumbers}}
+        id="numbers-include"
+        max="9"
+        min="0"
+        type="number">
+    </mz-input-container>
+    <mz-input-container>
+        <input mz-input
+        [label]="'Numbers to exclude'"
+        [validate]="true"
+        [dataError]=""
+        [dataSuccess]=""
+        value={{generatedSet.oddsNumbers}}
+        id="numbers-exclude"
+        max="9"
+        min="0"
+        type="number">
+    </mz-input-container>
+    <button mz-button>
+        Generate
+      </button>
     </div>
     <div class="col m6 l6">
-
-
+        <h3>Generated Numbers</h3>
+        <table class="bordered">
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>9</td>
+                <td>17</td>
+                <td>6</td>
+                <td>2</td>
+                <td>34</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>9</td>
+                <td>17</td>
+                <td>6</td>
+                <td>2</td>
+                <td>34</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>9</td>
+                <td>17</td>
+                <td>6</td>
+                <td>2</td>
+                <td>34</td>
+                <td>32</td>
+              </tr>
+            </tbody>
+          </table>
 
     </div>
 
